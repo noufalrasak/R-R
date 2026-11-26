@@ -25,7 +25,14 @@ body {
 /* ============================================================
    2. CONTENTS
    ============================================================ */
-
+.contacts {
+    min-height: 100vh;
+    min-height: 100svh;
+    background-image: url(assets/section2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
 /* ============================================================
    3. IMAGE
