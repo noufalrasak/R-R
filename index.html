@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ============================================================
+         HEADER
+         ============================================================ -->
+    <header>
+
+        <!-- Navigation -->
+
+        <!-- Music toggle (icon swaps between music-2 and pause via JS) -->
+
+        <!-- Hero copy -->
+
+        <!-- Countdown -->
+
+    </header>
+
+
+    <!-- ============================================================
+         1. Home
+         ============================================================ -->
+    <section class="home" id="home">
+
+    </section>
+
+
+    <!-- ============================================================
+         2. CONTENTS
+         ============================================================ -->
+    <section>
+
+    </section>
+
+
+    <!-- ============================================================
+         3. IMAGE
+         ============================================================ -->
+    <section>
+
+    </section>
+
+
+    <!-- ============================================================
+         4. EVENT
+         ============================================================ -->
+    <section>
+
+    </section>
+
+
+    <!-- ============================================================
+         5. LOCATION
+         ============================================================ -->
+    <section>
+
+    </section>
+
+
+    <!-- ============================================================
+         6. FAMILY CONTACTS
+         ============================================================ -->
+    <section>
+
+    </section>
+
+
+    <!-- ============================================================
+         7. RSVP
+         ============================================================ -->
+    <section class="rsvp" id="rsvp">
+
+        <!-- Left copy -->
+        <div class="rsvp-copy">
+            <p class="kicker">Kindly reply by 14 January</p>
+            <h2>Will you join us?</h2>
+            <p>Your presence is the loveliest gift. Let us know if we'll have the joy of celebrating with you.</p>
+
+            <div class="contact">
+                <i data-lucide="mail"></i>
+                <span>
+                    Need help?<br>
+                    <a href="mailto:hello@aaravandmeera.com">hello@aaravandmeera.com</a>
+                </span>
+            </div>
+        </div>
+
+        <!-- RSVP form -->
+        <form id="rsvpForm" novalidate>
+
+            <label for="rsvpName">Your name
+                <input id="rsvpName" type="text" required placeholder="Enter your full name">
+            </label>
+
+            <label for="rsvpAttending">Will you be attending?
+                <select id="rsvpAttending" required>
+                    <option value="" disabled selected>Select your response</option>
+                    <option value="Attending">Joyfully accepts</option>
+                    <option value="Not Attending">Regretfully declines</option>
+                </select>
+            </label>
+
+            <div id="guestsWrap">
+                <label for="rsvpGuests">Number of guests
+                    <input id="rsvpGuests" type="number" min="1" max="10" value="1" inputmode="numeric">
+                </label>
+            </div>
+
+            <label for="rsvpWish">Share a wish for the couple
+                <textarea id="rsvpWish" rows="4" placeholder="A blessing, a memory, or a little advice…"></textarea>
+            </label>
+
+            <button type="submit" class="button dark">
+                Send my response <i data-lucide="send"></i>
+            </button>
+
+            <!-- Success message (hidden until form is submitted) -->
+            <p id="rsvpSuccess" class="success hidden">
+                Thank you! Your response is with us. 🎉
+            </p>
+
+        </form>
+
+    </section><!-- /.rsvp -->
+
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer>
+        <div class="footer-mark">H <em class="amp">&amp;</em> H</div>
+        <p>We can't wait to celebrate with you.</p>
+        <a class="hashtag" href="#home">#AaravFoundHisMeera</a>
+
+        <div class="social">
+            <a href="https://instagram.com" aria-label="Instagram">
+                <i data-lucide="camera"></i>
+            </a>
+            <a href="mailto:hello@aaravandmeera.com" aria-label="Email">
+                <i data-lucide="mail"></i>
+            </a>
+        </div>
+
+        <small>Made with love · Udaipur · 2027</small>
+    </footer>
+
+</body>
+</html>
