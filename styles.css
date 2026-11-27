@@ -63,7 +63,7 @@ body {
    3. IMAGE
    ============================================================ */
 .photo-section {
-    background: #5a0f24;
+    background: transparent;
     display: flex;
     justify-content: center;
     padding: 90px 24px;
@@ -107,7 +107,6 @@ body {
     font-size: clamp(18px, 4.5vw, 22px);
     color: #2b2b2b;
 }
-
 /* ============================================================
    4. EVENT
    ============================================================ */
