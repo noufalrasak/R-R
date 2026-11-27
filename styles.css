@@ -3,7 +3,7 @@
    ============================================================ */
 body {
     margin: 0;
-    background-image: url(assets/Background-image.jpg);
+    background-image: url(Background-image.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -19,7 +19,7 @@ body {
     background-color: #5a0f24;
 
  /* Portrait	9:16	1080 × 1920	Phones */
-    background-image: url(assets/Home-9x16.jpg);
+    background-image: url(Home-9x16.jpg);
     
     background-size: cover;
     background-position: center center;
