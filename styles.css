@@ -84,10 +84,108 @@ body {
 .contacts {
     min-height: 100vh;
     min-height: 100svh;
-    background-image: url(assets/section2.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: clamp(50px, 9vw, 80px) clamp(16px, 5vw, 24px);
+    background-color: #3a0615;
+    background-image: url(Contents.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+.invite {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.invite-title {
+    font-family: 'Cinzel', 'Trajan Pro', Georgia, serif;
+    font-size: clamp(28px, 6vw, 54px);
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #f0d18f;
+    margin: 0 0 18px;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+.invite-ornament {
+    color: #dfbb81;
+    letter-spacing: 14px;
+    font-size: 14px;
+    margin: 0 0 clamp(26px, 5vw, 42px);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.invite-parents {
+    font-family: 'DM Sans', 'Lato', sans-serif;
+    font-size: clamp(14px, 3.2vw, 22px);
+    font-weight: 700;
+    letter-spacing: clamp(1.5px, 0.5vw, 3px);
+    text-transform: uppercase;
+    color: #dfbb81;
+    margin: clamp(26px, 5vw, 40px) 0 8px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.invite-address {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(16px, 2.8vw, 19px);
+    color: #e8d2a6;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.invite-line {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(16px, 2.8vw, 20px);
+    font-weight: 600;
+    color: #f5ead8;
+    max-width: 760px;
+    margin: clamp(18px, 4vw, 28px) auto 0;
+    line-height: 1.5;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.invite-couple {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: clamp(24px, 6vw, 50px) 0 clamp(26px, 5vw, 40px);
+}
+
+.invite-name {
+    font-family: 'Great Vibes', 'Allura', cursive;
+    font-size: clamp(48px, 11vw, 80px);
+    line-height: 1.1;
+    color: #f0d18f;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+.invite-with {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(20px, 4vw, 28px);
+    letter-spacing: 3px;
+    color: #f5ead8;
+    margin: 4px 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.invite-compliments {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(14px, 2.6vw, 16px);
+    font-weight: 700;
+    color: #f5ead8;
+    margin: clamp(26px, 5vw, 38px) 0 8px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.invite-compliments + .invite-address {
+    margin-bottom: clamp(20px, 4vw, 30px);
 }
 
 /* ============================================================
@@ -374,7 +472,7 @@ body {
     font-size: 11px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #dfbb81;
+    color: #ffffff;
     margin-bottom: 10px;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
@@ -383,13 +481,13 @@ body {
     font-family: 'Italiana', serif;
     font-size: clamp(32px, 6vw, 48px);
     font-weight: 400;
-    color: #f0d18f;
+    color: #C0C0C0;
     margin: 0 0 10px;
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
 }
 
 .section-alt .ornament {
-    color: #dfbb81;
+    color: #C0C0C0;
     letter-spacing: 8px;
     font-size: 14px;
     margin-bottom: 40px;
@@ -404,10 +502,10 @@ body {
 }
 
 .contact-card {
-    background: rgba(50, 6, 20, 0.72);
+    background: rgba(90, 24, 40, 1);
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
-    border: 1px solid #dfbb81;
+    border: 1px solid #C0C0C0;
     border-radius: 16px;
     padding: 22px 16px;
     text-align: center;
@@ -422,7 +520,7 @@ body {
 .contact-name {
     font-family: 'Italiana', serif;
     font-size: clamp(15px, 3.2vw, 19px);
-    color: #f0d18f;
+    color: #C0C0C0;
     font-weight: 400;
     margin-bottom: 3px;
 }
@@ -430,7 +528,7 @@ body {
 .contact-role {
     font-family: 'DM Sans', sans-serif;
     font-size: 13px;
-    color: #e8d2a6;
+    color: #C0C0C0;
     font-style: italic;
     margin-bottom: 14px;
 }
@@ -444,8 +542,8 @@ body {
     padding: 0 22px;
     box-sizing: border-box;
     background: transparent;
-    border: 1.5px solid #dfbb81;
-    color: #dfbb81;
+    border: 1.5px solid #C0C0C0;
+    color: #C0C0C0;
     border-radius: 40px;
     text-decoration: none;
     font-family: 'Italiana', serif;
