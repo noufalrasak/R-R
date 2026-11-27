@@ -118,7 +118,7 @@ body {
    ============================================================ */
 #venue {
     background: #f5ead8;
-    padding: 90px 24px;
+    padding: clamp(50px, 10vw, 90px) clamp(14px, 4vw, 24px);
 }
 
 #venue .section-inner {
@@ -148,16 +148,18 @@ body {
     color: #c9a24f;
     letter-spacing: 8px;
     font-size: 14px;
-    margin-bottom: 40px;
+    margin-bottom: clamp(24px, 6vw, 40px);
 }
 
 .venue-card {
     background: #e8daca;
     border: 1.5px solid #dfbb81;
     border-radius: 20px;
-    padding: 38px 28px;
-    display: inline-block;
-    min-width: min(100%, 360px);
+    padding: clamp(22px, 5vw, 38px) clamp(16px, 4vw, 28px);
+    width: 100%;
+    max-width: 560px;
+    box-sizing: border-box;
+    margin: 0 auto;
     box-shadow: 0 8px 32px rgba(90, 15, 36, 0.15);
 }
 
@@ -171,7 +173,7 @@ body {
     font-size: clamp(19px, 4vw, 26px);
     color: #5a0f24;
     font-weight: 400;
-    margin-bottom: 12px;
+    margin: 0 0 12px;
 }
 
 .venue-address {
@@ -179,18 +181,34 @@ body {
     font-size: clamp(14px, 2.8vw, 17px);
     color: #6e635c;
     line-height: 1.9;
-    margin-bottom: 22px;
+    margin: 0 0 22px;
 }
 
 .map-embed {
+    width: 100%;
     margin-bottom: 22px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.map-embed iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    min-height: 220px;
+    max-height: 420px;
+    border: 0;
 }
 
 .map-btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
+    min-height: 44px;
     padding: 12px 26px;
+    box-sizing: border-box;
     background: #5a0f24;
     color: #dfbb81;
     text-decoration: none;
@@ -201,9 +219,21 @@ body {
     transition: background 0.25s, transform 0.2s;
 }
 
-.map-btn:hover {
+.map-btn:hover,
+.map-btn:focus-visible {
     background: #7a1a33;
     transform: translateY(-2px);
+}
+
+/* Small phones: full-width button */
+@media (max-width: 480px) {
+    .map-btn {
+        width: 100%;
+    }
+
+    .map-embed iframe {
+        aspect-ratio: 1 / 1;
+    }
 }
 /* ============================================================
    6. FAMILY CONTACTS
