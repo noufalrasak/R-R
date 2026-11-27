@@ -17,13 +17,16 @@
         <!-- Navigation -->
 
         <!-- Music toggle (icon swaps between music-2 and pause via JS) -->
+        <button class="music" id="musicBtn" aria-label="Play melody">
+            <i data-lucide="music-2"></i>
+        </button>
+        <audio id="bgMusic" src="music.mp3" loop preload="none"></audio>
 
         <!-- Hero copy -->
 
         <!-- Countdown -->
 
     </header>
-
 
     <!-- ============================================================
          1. Home
@@ -95,7 +98,6 @@
             </div>
         </div>
     </section>
-
 
        <!-- ============================================================
          6. FAMILY CONTACTS
@@ -214,6 +216,41 @@
 
         <small>Made with love · Udaipur · 2027</small>
     </footer>
+
+        <!-- ============================================================
+         script for music
+         ============================================================ -->
+
+        <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        const btn = document.getElementById('musicBtn');
+        const audio = document.getElementById('bgMusic');
+
+        function setIcon(name) {
+            btn.innerHTML = '<i data-lucide="' + name + '"></i>';
+            lucide.createIcons();
+        }
+
+        btn.addEventListener('click', async () => {
+            try {
+                if (audio.paused) {
+                    await audio.play();
+                    btn.classList.add('playing');
+                    btn.setAttribute('aria-label', 'Pause melody');
+                    setIcon('pause');
+                } else {
+                    audio.pause();
+                    btn.classList.remove('playing');
+                    btn.setAttribute('aria-label', 'Play melody');
+                    setIcon('music-2');
+                }
+            } catch (err) {
+                console.error('Music could not play:', err);
+            }
+        });
+
+        lucide.createIcons();
+    </script>
 
 </body>
 </html>
