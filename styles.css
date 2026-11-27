@@ -142,8 +142,89 @@ body {
 /* ============================================================
    4. EVENT
    ============================================================ */
+#event {
+    background: transparent;
+    padding: clamp(50px, 10vw, 90px) clamp(14px, 4vw, 24px);
+}
 
+#event .section-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
 
+#event .eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #dfbb81;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+#event .sec-title {
+    font-family: 'Italiana', serif;
+    font-size: clamp(32px, 6vw, 48px);
+    font-weight: 400;
+    color: #f0d18f;
+    margin: 0 0 10px;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+#event .ornament {
+    color: #dfbb81;
+    letter-spacing: 8px;
+    font-size: 14px;
+    margin-bottom: clamp(24px, 6vw, 40px);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.event-card {
+    background: rgba(50, 6, 20, 0.72);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border: 1.5px solid #dfbb81;
+    border-radius: 20px;
+    padding: clamp(22px, 5vw, 38px) clamp(16px, 4vw, 28px);
+    width: 100%;
+    max-width: 560px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+}
+
+.event-icon {
+    font-size: 38px;
+    margin-bottom: 14px;
+}
+
+.event-name {
+    font-family: 'Italiana', serif;
+    font-size: clamp(19px, 4vw, 26px);
+    color: #f0d18f;
+    font-weight: 400;
+    margin: 0 0 12px;
+}
+
+.event-date,
+.event-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(14px, 2.8vw, 17px);
+    color: #e8d2a6;
+    line-height: 1.9;
+    margin: 0;
+}
+
+.event-date svg,
+.event-time svg {
+    flex-shrink: 0;
+    color: #dfbb81;
+}
 /* ============================================================
    5. VENUE
    ============================================================ */
