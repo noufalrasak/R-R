@@ -4,7 +4,7 @@
 body {
     margin: 0;
     background-color: #3a0615;
-    background-image: url(assets/Background-image.jpg);
+    background-image: url(Background-image.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -50,7 +50,7 @@ body {
     background-color: #5a0f24;
 
  /* Portrait	9:16	1080 × 1920	Phones */
-    background-image: url(assets/H-background-9x16.jpg);
+    background-image: url(H-background-9x16.jpg);
     
     background-size: cover;
     background-position: center center;
@@ -60,7 +60,7 @@ body {
 /* Portrait tablet (3:4) 1536 × 2048	iPads, tablets held upright */
 @media (min-aspect-ratio: 13/20) and (max-aspect-ratio: 1/1) {
     .home {
-        background-image: url(assets/Background-3x4.jpg);
+        background-image: url(Background-3x4.jpg);
     }
 }
 
@@ -74,7 +74,7 @@ body {
 /* Landscape desktop (16:9) 2048 × 1536	iPads held sideways */
 @media (min-aspect-ratio: 31/20) {
     .home {
-        background-image: url(assets/H-background-16x9.jpg);
+        background-image: url(H-background-16x9.jpg);
     }
 }
 
@@ -92,7 +92,7 @@ body {
     background-color: #3a0615;
 
     /* Portrait 9:16  1080 × 1920  Phones */
-    background-image: url(assets/Contents-9x16.jpg);
+    background-image: url(Contents-9x16.jpg);
 
     background-size: cover;
     background-position: center center;
@@ -116,7 +116,7 @@ body {
 /* Landscape desktop (16:9)  1920 × 1080  Laptops, desktops, TVs */
 @media (min-aspect-ratio: 31/20) {
     .contacts {
-        background-image: url(assets/Contents-16x9.jpg);
+        background-image: url(Contents-16x9.jpg);
     }
 }
 
@@ -225,7 +225,7 @@ body {
     background-color: #3a0615;
 
     /* Portrait 9:16  1080 × 1920  Phones */
-    background-image: url(assets/couple-background-9x16.jpg);
+    background-image: url(couple-background-9x16.jpg);
 
     background-size: cover;
     background-position: center center;
@@ -249,7 +249,7 @@ body {
 /* Landscape desktop (16:9)  1920 × 1080  Laptops, desktops, TVs */
 @media (min-aspect-ratio: 31/20) {
     .photo-section {
-        background-image: url(assets/couple-background-16x9.jpg);
+        background-image: url(couple-background-16x9.jpg);
     }
 }
 
