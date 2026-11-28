@@ -5,9 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="envelope.css">
 </head>
 
 <body>
+   
+    <!-- ============================================================
+         ENVELOPE INTRO
+         ============================================================ -->
+    <div class="envelope-screen" id="envelopeScreen">
+        <button class="envelope" id="envelopeBtn" aria-label="Open the invitation">
+            <span class="env-back"></span>
+            <span class="env-letter">
+                <small>You are invited</small>
+                <strong>Haneena &amp; Hafis</strong>
+            </span>
+            <span class="env-front"></span>
+            <span class="env-flap"></span>
+            <span class="env-seal">H&amp;H</span>
+        </button>
+        <p class="env-hint">Tap to open</p>
+    </div>
+    <noscript><style>.envelope-screen { display: none; }</style></noscript>
+
 
     <!-- ============================================================
          HEADER
@@ -300,6 +321,13 @@
 
         lucide.createIcons();
     </script>
+
+        <!-- ============================================================
+         script for envelope
+         ============================================================ -->
+
+    <script src="envelope.js"></script>
+
 
 </body>
 </html>
