@@ -79,45 +79,26 @@ body {
 }
 
 /* ============================================================
+   2 + 3. SHARED BACKGROUND (CONTENTS-IMAGE)
+   ============================================================ */
+.story {
+    background-color: #3a0615;
+    background-image: url(CONTENTS-IMAGE.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/* ============================================================
    2. CONTENTS
    ============================================================ */
 .contacts {
-    min-height: 100vh;
-    min-height: 100svh;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    padding: clamp(50px, 9vw, 80px) clamp(16px, 5vw, 24px);
-    background-color: #3a0615;
-
-    /* Portrait 9:16  1080 × 1920  Phones */
-    background-image: url(Contents-9x16.jpg);
-
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-/* Portrait tablet (3:4)  1536 × 2048  iPads, tablets held upright */
-@media (min-aspect-ratio: 13/20) and (max-aspect-ratio: 1/1) {
-    .contacts {
-        background-image: url(assets/Contents-3x4.jpg);
-    }
-}
-
-/* Landscape tablet (4:3)  2048 × 1536  iPads held sideways */
-@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 31/20) {
-    .contacts {
-        background-image: url(assets/Contents-4x3.jpg);
-    }
-}
-
-/* Landscape desktop (16:9)  1920 × 1080  Laptops, desktops, TVs */
-@media (min-aspect-ratio: 31/20) {
-    .contacts {
-        background-image: url(Contents-16x9.jpg);
-    }
+    background: transparent;
+    padding: clamp(300px, 46vw, 640px) clamp(16px, 5vw, 24px) clamp(50px, 9vw, 80px);
 }
 
 .invite {
@@ -211,6 +192,7 @@ body {
 .invite-compliments + .invite-address {
     margin-bottom: clamp(20px, 4vw, 30px);
 }
+
 /* ============================================================
    3. IMAGE
    ============================================================ */
@@ -222,35 +204,7 @@ body {
     justify-content: center;
     box-sizing: border-box;
     padding: 90px 24px;
-    background-color: #3a0615;
-
-    /* Portrait 9:16  1080 × 1920  Phones */
-    background-image: url(couple-background-9x16.jpg);
-
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-/* Portrait tablet (3:4)  1536 × 2048  iPads, tablets held upright */
-@media (min-aspect-ratio: 13/20) and (max-aspect-ratio: 1/1) {
-    .photo-section {
-        background-image: url(assets/couple-background-3x4.jpg);
-    }
-}
-
-/* Landscape tablet (4:3)  2048 × 1536  iPads held sideways */
-@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 31/20) {
-    .photo-section {
-        background-image: url(assets/couple-background-4x3.jpg);
-    }
-}
-
-/* Landscape desktop (16:9)  1920 × 1080  Laptops, desktops, TVs */
-@media (min-aspect-ratio: 31/20) {
-    .photo-section {
-        background-image: url(couple-background-16x9.jpg);
-    }
+    background: transparent;
 }
 
 .polaroid {
